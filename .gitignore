@@ -1,0 +1,9 @@
+out/
+.ipynb_checkpoints/
+.jupyter/
+.vscode/
+.DS_Store
+config.yaml
+container/
+.gitlab-ci.yml
+.github/

@@ -1,0 +1,21 @@
+stages:
+    - test
+    - publish
+
+urnc_student:
+    stage: test
+    image: python:3
+    script:
+        - pip install urnc
+        - urnc student
+    only:
+        - main
+
+urnc_ci:
+    stage: publish
+    image: python:3
+    script:
+        - pip install urnc
+        - urnc ci
+    only:
+        - tags
